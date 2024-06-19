@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(images/bg.jpg);
+    background-position: center center; /*imp point */
+    background-repeat: no-repeat; /*imp point */
+     background-size: max(1600px,100vw); /*imp point */
+    width: 100vw;
+    height: 110vh;
+    position: relative;
+}
+.main .box{
+    background-color: black;
+    width: 100vw;
+    height: 110vh;
+    opacity: 0.66;
+    position: absolute;
+    top: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80vw; /*imp point */
+    margin: auto; /*imp point */
+}
+nav img{
+    width: 180px;
+     position: relative;/* to come out popped */
+     z-index: 1; /*to come out popped */
+     top: 10px;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+    
+}
+nav select{
+    position: relative;
+    z-index: 10;
+}
+.boxes{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    z-index: 10;
+    font-family: "Martel Sans", sans-serif;
+    gap: 20px;
+}
+.l1{
+    font-weight: 1000;
+    font-size: 45px;
+}
+.l2{
+    font-weight: 200;
+    font-size: 23px;
+}
+.l4{
+    height: 10vh;
+}
+.seperation{
+    width: 100vw;
+    height: 2vh;
+    background-color: rgb(46, 46, 46);
+    position: relative;
+}
+.l4 input{
+    background-color: rgb(23,23,23,0.4);
+    padding: 9px 23px ;
+    width: 17vw;
+    height: 4vh;
+    border: 1px solid white;
+}
+.main select{
+    background-color: rgb(23,23,23,0.4);
+    padding: 9px 23px ;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 5px;
+}
+.red-btn1 {
+    padding: 8px 13px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    margin: 0px 30px;
+    font-weight: 600;
+    border: 1px solid red;
+    font-size: 15px;
+}
+.red-btn2{
+    padding: 10px 23px ;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    width: 15vw;
+    font-weight: 600;
+    border: 1px solid red;
+    font-size: 20px;
+}
+.first{
+    height: 105vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80vw;
+    margin: auto;
+}
+.image1{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.image1 img{
+    position: relative;
+    z-index: 10;
+    width: 510px;
+    
+}
+.image1 video{
+    position: absolute;
+    right: 0px;
+    width: 516px;
+    top: 79px;
+    height: 206px;
+}
+.first > div {
+     position: relative;
+    top: 20px;
+    right: 70px; 
+    display: flex;
+    flex-direction: column;
+}
+.first > div :first-child{
+    font-weight: 1000;
+    font-size: 43px;
+}
+
+.first > div :nth-child(2){
+    font-weight: 200;
+    font-size: 21px;
+}
+.headache{
+    width: 90vw;
+    gap: 10px;
+}
+.second img{
+    position: relative;
+    z-index: 10;
+    width: 40vw;
+    right: 181px;
+}
+.second > div {
+    position: relative;
+   top: 20px;
+   right: 20px; 
+   display: flex;
+   flex-direction: column;
+}
+.second > div :first-child{
+    font-weight: 1000;
+    font-size: 40px;
+}
+.third img{
+    position: relative;
+    z-index: 10;
+    width: 510px;
+}
+.third video{
+    position: absolute;
+    right: 62px;
+    width: 392px;
+    top: 31px;
+    height: 173px;
+}
+.faq h1{
+    color: white;
+    text-align: center;
+    padding: 23px 23px 3px 23px;
+    font-size: 45px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.faq .faqbox{
+    max-width: 80vw;
+    margin: 20px auto;
+    display: flex;
+    background-color: rgb(41, 41, 41);
+    padding: 20px;
+    height: 30px;
+    border: 1px solid black;
+    color: white;
+   justify-content: space-between;
+
+}
+.faqbox svg{
+   color: white;
+   /* justify-content: space-between; */
+}
+.end{
+    color: white;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
+.deadend{
+    margin: 10px 10px 20px 10px;
+    text-align: center;
+}
+@media  screen and (max-width:950px) {
+    .first{
+        flex-wrap: wrap;
+    }
+    
+}
